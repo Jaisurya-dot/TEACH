@@ -111,7 +111,7 @@ print("Months with exactly 120 mm of rainfall:", months_with_120mm)
 # Find the highest and lowest rainfall values recorded.
 highest_rainfall = max(monthly_rainfall)
 lowest_rainfall = min(monthly_rainfall) 
-print("Highest rainfall (mm):", highest_rainfall)
-print("Lowest rainfall (mm):", lowest_rainfall)
+print(highest_rainfall)
+print(lowest_rainfall)
 
 
