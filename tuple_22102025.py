@@ -92,11 +92,12 @@ print("Average marks:", average_marks)
 # The monthly_rainfall tuple provides the rainfall in millimeters for each month from January to December:
 
 
-# monthly_rainfall = (120, 150, 120, 180, 120, 90, 110, 130, 100, 140, 120, 160)
+monthly_rainfall = (120, 150, 120, 180, 120, 90, 110, 130, 100, 140, 120, 160)
 
 # Calculate the total annual rainfall.
 
 monthly_rainfall = (120, 150, 120, 180, 120, 90, 110, 130, 100, 140, 120, 160)
+month=("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
 total_annual_rainfall = sum(monthly_rainfall)
 print("Total annual rainfall (mm):", total_annual_rainfall)
 
@@ -105,9 +106,9 @@ print("Total annual rainfall (mm):", total_annual_rainfall)
 average_monthly_rainfall = total_annual_rainfall / len(monthly_rainfall)
 print("Average monthly rainfall (mm):", average_monthly_rainfall)
 # Identify the month(s) with exactly 120 mm of rainfall. (Hint: Consider using enumerate() or .count().)
-months_with_120mm = [index + 1 for index, value in enumerate(monthly_rainfall) if value == 120]
-print("Months with exactly 120 mm of rainfall:", months_with_120mm)
-
+for i in  enumerate(monthly_rainfall):
+    if i[1]==120:
+        print("Month with 120 mm rainfall:",month[i[0]])
 # Find the highest and lowest rainfall values recorded.
 highest_rainfall = max(monthly_rainfall)
 lowest_rainfall = min(monthly_rainfall) 
